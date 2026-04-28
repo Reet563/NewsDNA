@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+### NewsDNA Specific Rules ###
+
+# Don't upload the actual massive dataset, only the code to process it
+news_data.csv
+training_data.csv
+master_trainer.csv
+
+# Don't upload the raw model files (they are too big for GitHub)
+/model/*.model
+/model/*.dict
+/model/*.state
+/model/*.npy
+
+# Ignore local environment settings
+.env
